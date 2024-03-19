@@ -1,8 +1,8 @@
-
+# Professional README Generator
   https://img.shields.io/badge/License-MIT-yellow.svg
 
   ## Description
-  This is a command-line application that accepts user input to generate a README file for this project. This application uses Javascript and npm inquirer to generate the readme.
+  Professional README Generator is a command-line application that accepts user input to generate a README for their repository. The application uses JavaScript and npm inquirer to generate the README.
 
   ## Table of Contents:
    * [License](#License)
@@ -19,9 +19,9 @@
   run npm install
 
   ## Usage
-  Add the input 'node index.js' in the command line to start the application. Then provide your answers to the prompts. The input will be used to generate a README file. 
+  After installation, open the terminal and type 'node index.js' in the command line. Provide your answers for the promts and your input will be used to create a README file for your repository.
   
-  ## Contribute
+  ## Contributors
   S Aniruddha 
 
   ## Tests

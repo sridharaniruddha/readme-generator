@@ -70,7 +70,7 @@ const questions = [
     {
         //prompt for project contributors
         type: 'input',
-        name: 'Contributing',
+        name: 'Contribute',
         message: 'Please list the contributors on this project',
     },
     {

@@ -3,6 +3,23 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+
+//displaying license badge at the top of readme
+//function to display license badge
+const generateLicenseBadge = license => {
+    //array of badge image urls
+    const badgeArrays = {
+        'Apache': 'https://img.shields.io/badge/License-Apache%202.0-blue.svg',
+        'BSD': 'https://img.shields.io/badge/License-BSD%203--Clause-blue.svg',
+        'Creative Commons': 'https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg',
+        'GNU GPL v3': 'https://img.shields.io/badge/License-GPL-blue.svg',
+        'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
+      };
+      return badgeArrays[License];
+};
+
+
+
 // array of questions for user
 const questions = [
     { 
@@ -51,7 +68,7 @@ const questions = [
     { 
         //prompt for project contributors
         type:'input',
-        name: 'Contributors',
+        name: 'Contributing',
         message:'Please list the contributors on this project',
     },
     { 
@@ -60,7 +77,15 @@ const questions = [
         name: 'Email',
         message:'Please provide your email address',
     },
-];
+].then(answers => {
+
+    // Generate license badge
+    const licenseBadgeURL = generateLicenseBadge(answers.license);
+  
+    // Generate license URL
+    const licenseURLs = getLicenseURL(answers.license);
+
+  
 
 // function to write README file
 function writeToFile(fileName, data) {

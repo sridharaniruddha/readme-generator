@@ -9,7 +9,7 @@ const generateLicenseBadge = license => {
       'GNU GPL v3': 'https://img.shields.io/badge/License-GPL-blue.svg',
       'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
   };
-  return badgeArrays[License];
+  return badgeArrays[license];
 
 };
 
@@ -49,7 +49,6 @@ function generateMarkdown(data) {
   * [Click to access GitHub](https://www.github.com/${data.GitHub})
 
   * Feel free to contact me with any questions @: ${data.Email}
-
 `;
 }
 

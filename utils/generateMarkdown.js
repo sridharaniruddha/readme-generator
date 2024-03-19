@@ -43,7 +43,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.Usage}
   
-  ## Contribute
+  ## Contributors
   ${data.Contribute}
 
   ## Tests

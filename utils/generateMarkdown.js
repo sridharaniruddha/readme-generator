@@ -14,7 +14,7 @@ const generateLicenseBadge = license => {
 };
 
 // Get the badge URL based on the license
-const licenseBadgeUrl = generateLicenseBadge(data.License);
+const licenseBadgeUrl = generateLicenseBadge(data.license);
 // Embed the badge URL in Markdown syntax
 const licenseBadge = '![License Badge](${licenseBadgeUrl})';
 

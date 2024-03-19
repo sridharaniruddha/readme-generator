@@ -41,7 +41,7 @@ function generateMarkdown(data) {
   
   ## Contribute
   ${data.Contribute}
-
+  
   ## Tests
   ${data.Tests}
 

@@ -1,5 +1,5 @@
 # Professional README Generator
-  https://img.shields.io/badge/License-MIT-yellow.svg
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
   Professional README Generator is a command-line application that accepts user input to generate a README for their repository. The application uses JavaScript and npm inquirer to generate the README.

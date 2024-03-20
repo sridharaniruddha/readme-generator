@@ -30,7 +30,12 @@
   <a href = 'https://youtu.be/L3bVVIy5E6I'> ![screenshot](assets/Screenshot%202024-03-19%20at%2017.59.33.png)</a>
   
   ## Contribute
-  S Aniruddha 
+  To contribute to this project: 
+ - Fork the repository
+ - Create your feature branch (git checkout -b feature/AmazingFeature).
+ - Commit your changes (git commit -am 'Add some AmazingFeature').
+ - Push to the branch (git push origin feature/AmazingFeature).
+ - Open a pull request.
 
   ## Tests
   npm tests
